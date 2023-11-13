@@ -101,7 +101,7 @@ class _RecoverPageState extends State<RecoverPage> {
             Center(
               child: RegisterButtonWidget(
                 buttonText: 'Восстановить пароль ',
-                size: const Size(250, 47),
+                size: const Size(270, 47),
                 onPressed: () {
                   showDialog(
                     context: context,

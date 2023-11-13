@@ -52,7 +52,7 @@ class PasswordRecoveryPage extends StatelessWidget {
             Center(
               child: RegisterButtonWidget(
                 buttonText: 'Подтвердить',
-                size: const Size(150, 47),
+                size: const Size(180, 47),
                 onPressed: () {
                   Navigator.push(
                     context,

@@ -102,7 +102,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 const SizedBox(height: 22),
                 RegisterButtonWidget(
                   buttonText: 'Зарегистрировать',
-                  size: const Size(210, 47),
+                  size: const Size(220, 47),
                   onPressed: () {
                     Navigator.push(
                       context,

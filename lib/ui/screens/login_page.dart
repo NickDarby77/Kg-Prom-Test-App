@@ -84,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 49),
               RegisterButtonWidget(
                 buttonText: 'Вход',
-                size: const Size(110, 47),
+                size: const Size(120, 47),
                 onPressed: () {
                   Navigator.push(
                     context,
