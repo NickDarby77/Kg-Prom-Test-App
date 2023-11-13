@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                           );
                         },
                         child: const Text(
-                          'Забыли пороль?',
+                          'Забыли пароль?',
                           style: TextStyle(
                             color: Color(0xff000000),
                             fontWeight: FontWeight.w500,
