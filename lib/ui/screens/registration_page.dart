@@ -44,10 +44,12 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 const TextFieldWidget(
                   personalDataQuestion: 'ИНН',
                   personalDataAnswer: '12345678901234',
+                  textType: TextInputType.number,
                 ),
                 const TextFieldWidget(
                   personalDataQuestion: 'Номер телефона',
                   personalDataAnswer: '12345678901234',
+                  textType: TextInputType.phone,
                 ),
                 const RowTextFieldWidget(
                   personalDataQuestion: 'Должность',

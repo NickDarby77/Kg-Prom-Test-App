@@ -8,12 +8,14 @@ class TextFieldWidget extends StatelessWidget {
     required this.personalDataAnswer,
     this.eye,
     this.obscureText,
+    this.textType,
   });
 
   final String personalDataQuestion;
   final String personalDataAnswer;
   final IconButton? eye;
   final bool? obscureText;
+  final TextInputType? textType;
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +34,7 @@ class TextFieldWidget extends StatelessWidget {
           SizedBox(
             // height: 55,
             child: TextField(
+              keyboardType: textType,
               obscureText: obscureText ?? false,
               decoration: InputDecoration(
                 suffixIcon: eye,

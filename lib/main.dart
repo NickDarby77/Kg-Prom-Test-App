@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kg_prom_task/ui/screens/registration_page.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const KgPromApp());
 }
 

@@ -40,6 +40,7 @@ class PasswordRecoveryPage extends StatelessWidget {
             const TextFieldWidget(
               personalDataQuestion: 'Номер Телефона',
               personalDataAnswer: '+996 555 456 456',
+              textType: TextInputType.phone,
             ),
             const SizedBox(height: 42),
             Center(

@@ -43,6 +43,7 @@ class ConfirmationPage extends StatelessWidget {
                 const TextFieldWidget(
                   personalDataQuestion: 'СМС код',
                   personalDataAnswer: '2345',
+                  textType: TextInputType.number,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,

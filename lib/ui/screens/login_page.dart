@@ -36,6 +36,7 @@ class _LoginPageState extends State<LoginPage> {
               const TextFieldWidget(
                 personalDataQuestion: 'ИНН',
                 personalDataAnswer: '12345678901234',
+                textType: TextInputType.number,
               ),
               const SizedBox(height: 8),
               Column(
