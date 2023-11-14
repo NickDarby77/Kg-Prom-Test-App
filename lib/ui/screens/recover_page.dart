@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kg_prom_task/ui/theme/app_colors.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
 import 'package:kg_prom_task/ui/widgets/register_button.dart';
 import 'package:kg_prom_task/ui/widgets/textfield_widget.dart';
 
@@ -28,27 +30,18 @@ class _RecoverPageState extends State<RecoverPage> {
             const Center(
               child: Text(
                 'Восстановление пароля',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: AppFonts.s22w700,
               ),
             ),
             const SizedBox(height: 42),
             const Text(
               'Нужно создать новый пароль',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AppFonts.s14w600,
             ),
             const SizedBox(height: 8),
             const Text(
               'Введите свой новый пароль а после повторите его.',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-              ),
+              style: AppFonts.s14w400,
             ),
             const SizedBox(height: 18),
             Column(
@@ -65,7 +58,7 @@ class _RecoverPageState extends State<RecoverPage> {
                     icon: const Icon(
                       Icons.remove_red_eye_outlined,
                     ),
-                    color: Colors.black.withOpacity(0.7),
+                    color: AppColors.eyeColor,
                   ),
                 ),
                 Row(
@@ -74,7 +67,7 @@ class _RecoverPageState extends State<RecoverPage> {
                     Text(
                       'Не менее 8 символов',
                       style: TextStyle(
-                        color: const Color(0xff00520D).withOpacity(0.7),
+                        color: AppColors.min8SymbolsColor,
                       ),
                     ),
                   ],
@@ -94,7 +87,7 @@ class _RecoverPageState extends State<RecoverPage> {
                 icon: const Icon(
                   Icons.remove_red_eye_outlined,
                 ),
-                color: Colors.black.withOpacity(0.7),
+                color: AppColors.eyeColor,
               ),
             ),
             const SizedBox(height: 42),

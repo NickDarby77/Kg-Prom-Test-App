@@ -1,5 +1,6 @@
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:flutter/material.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
 
 class RowTextFieldWidget extends StatelessWidget {
   const RowTextFieldWidget({
@@ -25,11 +26,7 @@ class RowTextFieldWidget extends StatelessWidget {
               children: [
                 Text(
                   personalDataQuestion,
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black.withOpacity(0.8),
-                  ),
+                  style: AppFonts.s15w500,
                 ),
                 const SizedBox(height: 4),
                 SizedBox(
@@ -41,15 +38,15 @@ class RowTextFieldWidget extends StatelessWidget {
                     dropDownList: const [
                       DropDownValueModel(
                         name: 'Senior',
-                        value: Icon(
-                          Icons.handshake,
-                        ),
+                        value: '',
                       ),
-                       DropDownValueModel(
+                      DropDownValueModel(
                         name: 'Middle',
-                        value: Icon(
-                          Icons.handshake,
-                        ),
+                        value: '',
+                      ),
+                      DropDownValueModel(
+                        name: 'Junior',
+                        value: '',
                       ),
                     ],
                     textFieldDecoration: InputDecoration(
@@ -74,11 +71,7 @@ class RowTextFieldWidget extends StatelessWidget {
               children: [
                 Text(
                   personalDataQuestion2,
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black.withOpacity(0.8),
-                  ),
+                  style: AppFonts.s15w500,
                 ),
                 const SizedBox(height: 4),
                 SizedBox(
@@ -90,11 +83,15 @@ class RowTextFieldWidget extends StatelessWidget {
                     dropDownList: const [
                       DropDownValueModel(
                         name: 'Male',
-                        value: 'a',
+                        value: '',
                       ),
                       DropDownValueModel(
                         name: 'Female',
-                        value: 'a',
+                        value: '',
+                      ),
+                      DropDownValueModel(
+                        name: 'Not Determined',
+                        value: '',
                       ),
                     ],
                     textFieldDecoration: InputDecoration(

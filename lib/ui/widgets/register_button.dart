@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kg_prom_task/ui/theme/app_colors.dart';
 
 class RegisterButtonWidget extends StatelessWidget {
   const RegisterButtonWidget({
@@ -16,7 +17,7 @@ class RegisterButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xff5079EC),
+        backgroundColor: AppColors.buttonBgColor,
         fixedSize: size,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(49),

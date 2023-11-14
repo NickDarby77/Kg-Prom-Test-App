@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kg_prom_task/ui/screens/login_page.dart';
+import 'package:kg_prom_task/ui/theme/app_colors.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
+import 'package:kg_prom_task/data/animation_function.dart';
 import 'package:kg_prom_task/ui/widgets/register_button.dart';
 import 'package:kg_prom_task/ui/widgets/row_textfield_widget.dart';
 import 'package:kg_prom_task/ui/widgets/textfield_widget.dart';
@@ -27,10 +30,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 const SizedBox(height: 22),
                 const Text(
                   'Зарегистрировать сотрудника',
-                  style: TextStyle(
-                    fontSize: 23,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  style: AppFonts.s23w600,
                 ),
                 const SizedBox(height: 22),
                 const TextFieldWidget(
@@ -67,7 +67,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                         icon: const Icon(
                           Icons.remove_red_eye_outlined,
                         ),
-                        color: Colors.black.withOpacity(0.7),
+                        color: AppColors.eyeColor,
                       ),
                       obscureText: showText,
                     ),
@@ -77,7 +77,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                         Text(
                           'Не менее 8 символов',
                           style: TextStyle(
-                            color: const Color(0xff00520D).withOpacity(0.7),
+                            color: AppColors.min8SymbolsColor,
                           ),
                         ),
                       ],
@@ -95,7 +95,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     icon: const Icon(
                       Icons.remove_red_eye_outlined,
                     ),
-                    color: Colors.black.withOpacity(0.7),
+                    color: AppColors.eyeColor,
                   ),
                   obscureText: showText2,
                 ),
@@ -106,8 +106,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const LoginPage(),
+                      createRoute(
+                        destinationPage: const LoginPage(),
                       ),
                     );
                   },

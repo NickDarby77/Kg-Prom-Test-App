@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kg_prom_task/ui/screens/password_recovery.dart';
+import 'package:kg_prom_task/ui/theme/app_colors.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
+import 'package:kg_prom_task/data/animation_function.dart';
 import 'package:kg_prom_task/ui/widgets/register_button.dart';
 import 'package:kg_prom_task/ui/widgets/textfield_widget.dart';
 
@@ -27,10 +30,7 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               const Text(
                 'Вход',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: AppFonts.s22w700,
               ),
               const SizedBox(height: 33),
               const TextFieldWidget(
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
                       icon: const Icon(
                         Icons.remove_red_eye_outlined,
                       ),
-                      color: Colors.black.withOpacity(0.7),
+                      color: AppColors.eyeColor,
                     ),
                   ),
                   Row(
@@ -62,19 +62,14 @@ class _LoginPageState extends State<LoginPage> {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  const PasswordRecoveryPage(),
+                            createRoute(
+                              destinationPage: const PasswordRecoveryPage(),
                             ),
                           );
                         },
                         child: const Text(
                           'Забыли пароль?',
-                          style: TextStyle(
-                            color: Color(0xff000000),
-                            fontWeight: FontWeight.w500,
-                            decoration: TextDecoration.underline,
-                          ),
+                          style: AppFonts.w500UnderlineText,
                         ),
                       ),
                     ],
@@ -88,8 +83,8 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => const PasswordRecoveryPage(),
+                    createRoute(
+                      destinationPage: const PasswordRecoveryPage(),
                     ),
                   );
                 },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
 
 class TextFieldWidget extends StatelessWidget {
   const TextFieldWidget({
@@ -25,11 +26,7 @@ class TextFieldWidget extends StatelessWidget {
         children: [
           Text(
             personalDataQuestion,
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w500,
-              color: Colors.black.withOpacity(0.8),
-            ),
+            style: AppFonts.s15w500,
           ),
           const SizedBox(height: 4),
           SizedBox(

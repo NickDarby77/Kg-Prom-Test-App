@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:kg_prom_task/ui/screens/password_recovery.dart';
 import 'package:kg_prom_task/ui/screens/recover_page.dart';
+import 'package:kg_prom_task/ui/theme/app_fonts.dart';
+import 'package:kg_prom_task/data/animation_function.dart';
 import 'package:kg_prom_task/ui/widgets/register_button.dart';
 import 'package:kg_prom_task/ui/widgets/textfield_widget.dart';
 
@@ -21,44 +24,41 @@ class ConfirmationPage extends StatelessWidget {
             const Center(
               child: Text(
                 'Восстановление пароля',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: AppFonts.s22w700,
               ),
             ),
             const SizedBox(height: 42),
             const Text(
               'Введите код из СМС',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
+              style: AppFonts.s14w600,
             ),
             const SizedBox(height: 8),
             const Text(
               'Для продолжения сброса пароля Вам нужно ввести код, который Вам пришел в СМС.',
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
-              ),
+              style: AppFonts.s14w400,
             ),
             const SizedBox(height: 18),
-            const Column(
+            Column(
               children: [
-                TextFieldWidget(
+                const TextFieldWidget(
                   personalDataQuestion: 'СМС код',
                   personalDataAnswer: '2345',
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      'Не получили СМС?',
-                      style: TextStyle(
-                        color: Color(0xff000000),
-                        fontWeight: FontWeight.w500,
-                        decoration: TextDecoration.underline,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          createRoute(
+                            destinationPage: const PasswordRecoveryPage(),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        'Не получили СМС?',
+                        style: AppFonts.w500UnderlineText,
                       ),
                     ),
                   ],
@@ -73,8 +73,8 @@ class ConfirmationPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => const RecoverPage(),
+                    createRoute(
+                      destinationPage: const RecoverPage(),
                     ),
                   );
                 },
