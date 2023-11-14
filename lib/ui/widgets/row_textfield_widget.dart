@@ -17,7 +17,7 @@ class RowTextFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(
         children: [
           Expanded(
@@ -64,7 +64,7 @@ class RowTextFieldWidget extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: 20),
+          const SizedBox(width: 19),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

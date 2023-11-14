@@ -19,7 +19,7 @@ class TextFieldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        vertical: 8,
+        vertical: 6,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,7 +30,7 @@ class TextFieldWidget extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           SizedBox(
-            height: 55,
+            // height: 55,
             child: TextField(
               obscureText: obscureText ?? false,
               decoration: InputDecoration(

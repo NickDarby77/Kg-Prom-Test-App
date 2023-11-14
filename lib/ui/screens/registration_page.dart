@@ -112,7 +112,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     );
                   },
                 ),
-                const SizedBox(height: 22),
+                const SizedBox(height: 9),
               ],
             ),
           ),
