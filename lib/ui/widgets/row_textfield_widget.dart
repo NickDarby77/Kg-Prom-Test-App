@@ -30,7 +30,7 @@ class RowTextFieldWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 SizedBox(
-                  height: 55,
+                  // height: 55,
                   child: DropDownTextField(
                     dropDownIconProperty: IconProperty(
                       icon: Icons.keyboard_arrow_down_outlined,
@@ -75,7 +75,7 @@ class RowTextFieldWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 SizedBox(
-                  height: 55,
+                  // height: 55,
                   child: DropDownTextField(
                     dropDownIconProperty: IconProperty(
                       icon: Icons.keyboard_arrow_down_outlined,
